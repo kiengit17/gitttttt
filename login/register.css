@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif ;
+    background-image: linear-gradient(135deg, #9dc9ef, #cff4c6);
+    padding: 40px;
+}
+.container{
+    min-height: calc(100vh - 40px *2);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.login-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: content;
+    padding-left:150px;
+    background-color: #ffff;
+    padding-right: 10px;
+}
+.login-right{
+    background-color: #eee;
+    display: flex;;
+    justify-content: center;
+
+}
+.login-right img{
+    width: 80%;
+}
+.login-header{
+    width: 450px;
+    margin-bottom: 30px;
+}
+.login-form-content{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.login-form-footer{
+    display: flex;
+    gap: 30px;
+    margin-top: 70px;
+}
+.login-form-footer a{
+    flex: 6;
+    gap: 15px;
+    border: 1px solid #9dc9ef;
+    border-radius: 100px;
+    padding: .6rem;
+    justify-content: center;
+    display: flex;;
+    color: black;
+    align-items: center;
+    text-decoration: none;
+}
+.login-form-footer a:hover{
+    background-image: linear-gradient(135deg, #9dc9ef, #cff4c6);
+    border: none;
+    color: #fff;
+}
+.login-header h1{ 
+     font-weight: 500;
+} 
+.login-header p{
+    color: #999;
+    font-size: 13px;
+}
+.form-item-input label{
+    display: inline-block;
+    background-color: #fff;
+    margin-bottom: 10px;
+    position: absolute;
+    padding: 0 10px;
+    transform: translate(30px, -10px);
+    font-size: 14px;
+}
+.form-item-input input{
+    border :1px solid black;
+    height: 55px;
+    padding: 0 2rem;
+    width: 100%;
+    outline: none;
+    /* transition; */
+    font-size: 18px;
+    border-radius: 100px;
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.login-form-btn{
+    border: none;
+    background-image: linear-gradient(135deg, #9dc9ef, #cff4c6);
+    color: #ffff;
+    padding: 1rem;
+    border-radius: 100px;
+    align-items: center;
+    font-size: 18px;
+    height: 55px;
+    cursor: pointer;
+}
+
